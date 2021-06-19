@@ -1,0 +1,8 @@
+RewriteEngine on
+RewriteCond %{THE_REQUEST} ^.*/index.html
+RewriteCond %{THE_REQUEST} ^.*/index.php
+RewriteRule ^(.*)index.php$ http://stop-landfill-henoko.gftd.me/$1 [R=301,L]
+
+AddType video/ogg .ogv
+AddType video/mp4 .mp4
+AddType video/webm .webm
